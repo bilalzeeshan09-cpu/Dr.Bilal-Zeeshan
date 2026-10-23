@@ -1,0 +1,3664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dr Muhammad Bilal Zeeshan | Chemistry Teacher</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   CHEMISTRY TEACHER PORTFOLIO
+   EASY COLOR EDITING
+========================================================= */
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary: #06b6d4;
+    --dark: #0f172a;
+    --text: #475569;
+    --light: #f5f9ff;
+    --white: #ffffff;
+    --border: #e2e8f0;
+    --green: #16a34a;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    background: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container {
+    width: min(1180px, 92%);
+    margin: auto;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    padding: 18px 0;
+
+    transition: .3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(255,255,255,.94);
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 5px 30px rgba(15,23,42,.08);
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 900;
+    color: var(--dark);
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    transition: .2s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.nav-contact {
+    background: var(--dark);
+    color: white !important;
+
+    padding: 11px 19px;
+
+    border-radius: 9px;
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 27px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding-top: 150px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(37,99,235,.15),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 10% 80%,
+            rgba(6,182,212,.12),
+            transparent 30%
+        ),
+
+        #ffffff;
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.05fr
+        .95fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.hero-badge {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 8px;
+
+    background: #eff6ff;
+
+    color: var(--primary);
+
+    padding: 9px 15px;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    margin-bottom: 22px;
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+
+    background: var(--green);
+
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size:
+        clamp(44px, 6vw, 76px);
+
+    line-height: 1.02;
+
+    letter-spacing: -3px;
+
+    color: var(--dark);
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero-description {
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    max-width: 610px;
+
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 13px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 23px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,.25);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+
+    transform:
+        translateY(-3px);
+}
+
+.btn-outline {
+    border-color: #cbd5e1;
+
+    color: var(--dark);
+}
+
+.btn-outline:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   HERO CHEMISTRY VISUAL
+========================================================= */
+
+.chemistry-visual {
+    position: relative;
+
+    height: 500px;
+
+    display: grid;
+
+    place-items: center;
+}
+
+.teacher-photo {
+    width: 390px;
+    height: 450px;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    background: white;
+
+    padding: 10px;
+
+    box-shadow:
+        0 30px 80px rgba(15,23,42,.15);
+
+    transform: rotate(2deg);
+
+    transition: .4s;
+}
+
+.teacher-photo:hover {
+    transform: rotate(0deg) translateY(-8px);
+}
+
+.teacher-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+
+/* Chemistry floating cards */
+
+.chem-card {
+    position: absolute;
+
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    padding: 15px 18px;
+
+    box-shadow:
+        0 15px 40px rgba(15,23,42,.13);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    animation: floating 4s ease-in-out infinite;
+}
+
+.chem-card strong {
+    color: var(--dark);
+
+    display: block;
+
+    font-size: 14px;
+}
+
+.chem-card small {
+    font-size: 12px;
+}
+
+.chem-icon {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    color: var(--primary);
+
+    font-size: 17px;
+
+    font-weight: 900;
+}
+
+.card-top {
+    right: 0;
+    top: 55px;
+}
+
+.card-bottom {
+    left: 0;
+    bottom: 65px;
+}
+
+@keyframes floating {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats {
+    padding: 32px 0;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 20px;
+
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 34px;
+
+    color: var(--dark);
+}
+
+.stat p {
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+section {
+    padding: 105px 0;
+}
+
+.section-heading {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin:
+        0 auto
+        55px;
+}
+
+.section-heading .mini {
+    color: var(--primary);
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.6px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size:
+        clamp(32px,5vw,50px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+
+    color: var(--dark);
+
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    background: var(--light);
+}
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns:
+        .9fr
+        1.1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+
+    height: 530px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+
+.experience {
+    position: absolute;
+
+    right: -20px;
+
+    bottom: 30px;
+
+    background: var(--dark);
+
+    color: white;
+
+    padding: 20px 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 20px 40px rgba(15,23,42,.2);
+}
+
+.experience strong {
+    display: block;
+
+    font-size: 30px;
+}
+
+.about-content .mini {
+    color: var(--primary);
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+.about-content h2 {
+    color: var(--dark);
+
+    font-size:
+        clamp(35px,4vw,52px);
+
+    line-height: 1.1;
+
+    margin:
+        14px 0
+        20px;
+}
+
+.about-content p {
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+.check-list {
+    list-style: none;
+
+    margin: 25px 0;
+}
+
+.check-list li {
+    margin-bottom: 13px;
+
+    font-weight: 600;
+
+    color: #334155;
+}
+
+.check-list li::before {
+    content: "✓";
+
+    color: var(--green);
+
+    margin-right: 10px;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   PERSONAL DETAILS
+========================================================= */
+
+.personal-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+}
+
+.personal-item {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    transition: .3s;
+}
+
+.personal-item:hover {
+    transform: translateY(-4px);
+
+    border-color:
+        rgba(37,99,235,.35);
+
+    box-shadow:
+        0 12px 30px rgba(15,23,42,.06);
+}
+
+.personal-item span {
+    display: block;
+
+    font-size: 11px;
+
+    color: #64748b;
+
+    text-transform: uppercase;
+
+    letter-spacing: .7px;
+
+    margin-bottom: 6px;
+}
+
+.personal-item strong {
+    color: var(--dark);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education {
+    background: var(--light);
+}
+
+.timeline {
+    max-width: 850px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 20px;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: #dbeafe;
+}
+
+.timeline-item {
+    position: relative;
+
+    padding-left: 65px;
+
+    margin-bottom: 35px;
+}
+
+.timeline-dot {
+    position: absolute;
+
+    left: 9px;
+
+    top: 5px;
+
+    width: 24px;
+    height: 24px;
+
+    background: var(--primary);
+
+    border: 5px solid #dbeafe;
+
+    border-radius: 50%;
+}
+
+.timeline-card {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 24px;
+
+    transition: .3s;
+}
+
+.timeline-card:hover {
+    transform: translateX(7px);
+
+    box-shadow:
+        0 15px 35px rgba(15,23,42,.07);
+}
+
+.timeline-card small {
+    color: var(--primary);
+
+    font-weight: 800;
+}
+
+.timeline-card h3 {
+    color: var(--dark);
+
+    margin:
+        7px 0
+        8px;
+}
+
+.timeline-card p {
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SUBJECTS
+========================================================= */
+
+.subject-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 22px;
+}
+
+.subject-card {
+    padding: 30px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    background: white;
+
+    transition: .35s;
+}
+
+.subject-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(15,23,42,.09);
+}
+
+.subject-icon {
+    width: 54px;
+    height: 54px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 14px;
+
+    background: #eff6ff;
+
+    color: var(--primary);
+
+    font-size: 20px;
+
+    font-weight: 900;
+
+    margin-bottom: 20px;
+}
+
+.subject-card h3 {
+    color: var(--dark);
+
+    margin-bottom: 10px;
+}
+
+.subject-card p {
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TEACHING METHOD
+========================================================= */
+
+.method {
+    background: var(--light);
+}
+
+.method-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 18px;
+}
+
+.method-card {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.method-card:hover {
+    transform: translateY(-7px);
+}
+
+.method-number {
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 17px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-weight: 900;
+}
+
+.method-card h3 {
+    color: var(--dark);
+
+    margin-bottom: 9px;
+}
+
+.method-card p {
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   LANGUAGES
+========================================================= */
+
+.languages {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.language-card {
+    padding: 28px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.language-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(15,23,42,.07);
+}
+
+.language-icon {
+    font-size: 32px;
+
+    margin-bottom: 12px;
+}
+
+.language-card h3 {
+    color: var(--dark);
+
+    margin-bottom: 7px;
+}
+
+.language-card p {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills {
+    background: var(--light);
+}
+
+.skills-container {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 23px;
+}
+
+.skill-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: var(--dark);
+}
+
+.skill-bar {
+    height: 9px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+
+    width: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            var(--secondary)
+        );
+
+    border-radius: 20px;
+
+    transition:
+        width 1.5s ease;
+}
+
+
+/* =========================================================
+   ACHIEVEMENTS
+========================================================= */
+
+.achievement-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 22px;
+}
+
+.achievement {
+    padding: 30px;
+
+    border-radius: 18px;
+
+    border: 1px solid var(--border);
+
+    transition: .3s;
+}
+
+.achievement:hover {
+    transform: translateY(-7px);
+}
+
+.achievement-icon {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.achievement h3 {
+    color: var(--dark);
+
+    margin-bottom: 9px;
+}
+
+.achievement p {
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+========================================================= */
+
+.testimonials {
+    background: var(--light);
+}
+
+.testimonial-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 22px;
+}
+
+.testimonial {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    padding: 28px;
+}
+
+.stars {
+    color: #f59e0b;
+
+    margin-bottom: 14px;
+}
+
+.testimonial p {
+    line-height: 1.8;
+
+    font-size: 14px;
+
+    margin-bottom: 22px;
+}
+
+.student {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.avatar {
+    width: 43px;
+    height: 43px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+
+    color: var(--primary);
+
+    font-weight: 900;
+}
+
+.student strong {
+    color: var(--dark);
+
+    display: block;
+}
+
+.student small {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq {
+    background: white;
+}
+
+.faq-container {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.faq-item {
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    margin-bottom: 12px;
+
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+
+    padding: 20px;
+
+    border: none;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    color: var(--dark);
+}
+
+.plus {
+    font-size: 22px;
+
+    transition: .3s;
+}
+
+.faq-answer {
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: .4s ease;
+}
+
+.faq-answer p {
+    padding:
+        0 20px
+        20px;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+.faq-item.active
+.faq-answer {
+    max-height: 200px;
+}
+
+.faq-item.active
+.plus {
+    transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+    background: var(--light);
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns:
+        .8fr
+        1.2fr;
+
+    gap: 65px;
+}
+
+.contact-info h2 {
+    color: var(--dark);
+
+    font-size:
+        clamp(35px,4vw,50px);
+
+    line-height: 1.1;
+
+    margin-bottom: 18px;
+}
+
+.contact-info > p {
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    margin: 20px 0;
+}
+
+.contact-detail strong {
+    display: block;
+
+    color: var(--dark);
+
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    display: grid;
+
+    gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    background: white;
+
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37,99,235,.1);
+}
+
+.contact-form textarea {
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp {
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #25D366;
+
+    color: white;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.2);
+
+    z-index: 1000;
+
+    transition: .3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: #0f172a;
+
+    color: #94a3b8;
+
+    padding:
+        60px 0
+        25px;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        repeat(3,1fr);
+
+    gap: 40px;
+
+    padding-bottom: 45px;
+}
+
+.footer-brand .logo {
+    color: white;
+
+    display: block;
+
+    margin-bottom: 14px;
+}
+
+.footer-brand p {
+    max-width: 310px;
+
+    line-height: 1.7;
+
+    font-size: 13px;
+}
+
+footer h4 {
+    color: white;
+
+    margin-bottom: 16px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 11px;
+
+    font-size: 13px;
+}
+
+footer li a:hover {
+    color: white;
+}
+
+.copyright {
+    border-top:
+        1px solid #334155;
+
+    padding-top: 22px;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform:
+        translateY(35px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width: 900px) {
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 4%;
+
+        width: 92%;
+
+        background: white;
+
+        padding: 25px;
+
+        border-radius: 15px;
+
+        box-shadow:
+            0 20px 50px
+            rgba(15,23,42,.12);
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .chemistry-visual {
+        max-width: 600px;
+
+        margin: auto;
+    }
+
+    .subject-grid,
+    .achievement-grid,
+    .testimonial-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .method-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap: 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:600px) {
+
+    section {
+        padding: 75px 0;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .teacher-photo {
+        width: 300px;
+        height: 390px;
+    }
+
+    .chem-card {
+        display: none;
+    }
+
+    .subject-grid,
+    .achievement-grid,
+    .testimonial-grid,
+    .languages,
+    .method-grid,
+    .stats-grid,
+    .footer-grid,
+    .personal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 420px;
+    }
+
+    .experience {
+        right: 10px;
+    }
+
+    .whatsapp {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="navbar" id="navbar">
+
+<div class="container nav-inner">
+
+<!-- EDIT HERE: YOUR NAME -->
+<a href="#home" class="logo">
+    Dr <span>Muhammad Bilal Zeeshan</span>
+</a>
+
+<button class="menu-btn" id="menuBtn">
+    ☰
+</button>
+
+<nav class="nav-links" id="navLinks">
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#education">Education</a>
+
+<a href="#subjects">Chemistry</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#reviews">Reviews</a>
+
+<a href="#contact" class="nav-contact">
+    Contact
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+
+<div class="reveal">
+
+<div class="hero-badge">
+
+<span class="badge-dot"></span>
+
+Chemistry Teacher & Educator
+
+</div>
+
+
+<!-- EDIT HERE -->
+
+<h1>
+
+Making Chemistry
+<br>
+
+<span>Simple & Interesting.</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+I am a passionate Chemistry teacher dedicated to helping
+students understand chemistry through simple explanations,
+practical examples and engaging learning methods.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a href="#about" class="btn btn-primary">
+    About Me
+</a>
+
+<a href="#contact" class="btn btn-outline">
+    Contact Me
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="chemistry-visual reveal">
+
+
+<!-- EDIT HERE:
+     Replace image URL with your own photo
+-->
+
+<div class="teacher-photo">
+
+<img
+src="Dr.png"
+alt="Chemistry Teacher"
+>
+
+</div>
+
+
+<div class="chem-card card-top">
+
+<div class="chem-icon">
+    ⚗
+</div>
+
+<div>
+
+<strong>
+Chemistry
+</strong>
+
+<small>
+Learn With Understanding
+</small>
+
+</div>
+
+</div>
+
+
+<div class="chem-card card-bottom">
+
+<div class="chem-icon">
+    H₂O
+</div>
+
+<div>
+
+<strong>
+Science & Discovery
+</strong>
+
+<small>
+Explore. Understand. Apply.
+</small>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="stats">
+
+<div class="container stats-grid">
+
+
+<div class="stat reveal">
+
+<h3 data-count="500">
+0+
+</h3>
+
+<p>
+Students Taught
+</p>
+
+</div>
+
+
+<div class="stat reveal">
+
+<h3 data-count="10">
+0+
+</h3>
+
+<p>
+Years Experience
+</p>
+
+</div>
+
+
+<div class="stat reveal">
+
+<h3 data-count="95">
+0%
+</h3>
+
+<p>
+Student Satisfaction
+</p>
+
+</div>
+
+
+<div class="stat reveal">
+
+<h3 data-count="20">
+0+
+</h3>
+
+<p>
+Topics Covered
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+
+<div class="about-image reveal">
+
+<!-- EDIT HERE -->
+
+<img
+src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80"
+alt="Chemistry"
+>
+
+
+<div class="experience">
+
+<strong>
+10+
+</strong>
+
+Years Teaching Experience
+
+</div>
+
+</div>
+
+
+
+<div class="about-content reveal">
+
+<span class="mini">
+About Me
+</span>
+
+
+<!-- EDIT HERE -->
+
+<h2>
+A Teacher Who Makes
+Chemistry Easier.
+</h2>
+
+
+<p>
+
+Hello! I am
+<strong>Bilal Zeeshan</strong>,
+a dedicated Chemistry teacher who believes that
+Chemistry becomes easier when students understand
+the concept instead of simply memorizing it.
+
+</p>
+
+
+<p>
+
+My teaching approach combines clear explanations,
+visual examples, problem-solving and real-life
+applications to make Chemistry more interesting
+and understandable.
+
+</p>
+
+
+<ul class="check-list">
+
+<li>
+Concept-based Chemistry teaching
+</li>
+
+<li>
+Exam preparation and problem solving
+</li>
+
+<li>
+Practical and real-life examples
+</li>
+
+<li>
+Individual student guidance
+</li>
+
+</ul>
+
+
+<a href="#contact"
+class="btn btn-primary">
+
+Let's Connect
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PERSONAL DETAILS
+========================================================= -->
+
+<section>
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<div class="mini">
+Personal Information
+</div>
+
+<h2>
+Get To Know Me
+</h2>
+
+<p>
+A few personal and professional details about me.
+</p>
+
+</div>
+
+
+<div class="personal-grid">
+
+
+<!-- EDIT THESE DETAILS -->
+
+<div class="personal-item reveal">
+
+<span>
+Full Name
+</span>
+
+<strong>
+Dr Muhammad Bilal Zeeshan
+</strong>
+
+</div>
+
+
+<div class="personal-item reveal">
+
+<span>
+Profession
+</span>
+
+<strong>
+Chemistry Teacher
+</strong>
+
+</div>
+
+
+<div class="personal-item reveal">
+
+<span>
+Nationality
+</span>
+
+<strong>
+Pakistani
+</strong>
+
+</div>
+
+
+<div class="personal-item reveal">
+
+<span>
+Location
+</span>
+
+<strong>
+Sargodha, Pakistan
+</strong>
+
+</div>
+
+
+<div class="personal-item reveal">
+
+<span>
+Email
+</span>
+
+<strong>
+bilalzeeshan09@gmail.com
+</strong>
+
+</div>
+
+
+<div class="personal-item reveal">
+
+<span>
+Phone
+</span>
+
+<strong>
++92 333 9805622
+</strong>
+
+</div>
+
+
+<div class="personal-item reveal">
+
+<span>
+Teaching Mode
+</span>
+
+<strong>
+Online & Physical
+</strong>
+
+</div>
+
+
+<div class="personal-item reveal">
+
+<span>
+Specialization
+</span>
+
+<strong>
+Chemistry Education
+</strong>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EDUCATION
+========================================================= -->
+
+<section class="education" id="education">
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<div class="mini">
+Education
+</div>
+
+<h2>
+Academic Journey
+</h2>
+
+<p>
+My educational background and professional development.
+</p>
+
+</div>
+
+
+<div class="timeline">
+
+
+<!-- EDIT EDUCATION -->
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<small>
+2020 — 2023
+</small>
+
+<h3>
+Ph.D Chemistry
+</h3>
+
+<p>
+University of Sargodha
+</p>
+
+</div>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<small>
+2012 — 2014
+</small>
+
+<h3>
+M.Phil Chemistry
+</h3>
+
+<p>
+University of Sargodha
+</p>
+
+</div>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<small>
+Professional Development
+</small>
+
+<h3>
+Teaching & Educational Training
+</h3>
+
+<p>
+Professional courses, workshops and teaching development programs.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CHEMISTRY SUBJECTS
+========================================================= -->
+
+<section id="subjects">
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<div class="mini">
+My Expertise
+</div>
+
+<h2>
+Chemistry Topics I Teach
+</h2>
+
+<p>
+From fundamental concepts to advanced Chemistry,
+I help students build a strong understanding.
+</p>
+
+</div>
+
+
+<div class="subject-grid">
+
+
+<div class="subject-card reveal">
+
+<div class="subject-icon">
+⚛
+</div>
+
+<h3>
+Atomic Structure
+</h3>
+
+<p>
+Understand atoms, electrons, orbitals,
+quantum concepts and periodic trends.
+</p>
+
+</div>
+
+
+<div class="subject-card reveal">
+
+<div class="subject-icon">
+H₂
+</div>
+
+<h3>
+Chemical Bonding
+</h3>
+
+<p>
+Learn ionic, covalent, metallic bonding,
+molecular geometry and intermolecular forces.
+</p>
+
+</div>
+
+
+<div class="subject-card reveal">
+
+<div class="subject-icon">
+pH
+</div>
+
+<h3>
+Acids & Bases
+</h3>
+
+<p>
+Explore pH, acids, bases, neutralization,
+buffers and chemical equilibrium.
+</p>
+
+</div>
+
+
+<div class="subject-card reveal">
+
+<div class="subject-icon">
+CO₂
+</div>
+
+<h3>
+Organic Chemistry
+</h3>
+
+<p>
+Understand hydrocarbons, functional groups,
+reactions and organic mechanisms.
+</p>
+
+</div>
+
+
+<div class="subject-card reveal">
+
+<div class="subject-icon">
+Δ
+</div>
+
+<h3>
+Thermochemistry
+</h3>
+
+<p>
+Study energy changes, enthalpy,
+calorimetry and thermodynamic concepts.
+</p>
+
+</div>
+
+
+<div class="subject-card reveal">
+
+<div class="subject-icon">
+⇌
+</div>
+
+<h3>
+Chemical Equilibrium
+</h3>
+
+<p>
+Master equilibrium, Le Chatelier's principle,
+Kc, Kp and equilibrium calculations.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TEACHING METHOD
+========================================================= -->
+
+<section class="method">
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<div class="mini">
+My Teaching Method
+</div>
+
+<h2>
+How I Teach Chemistry
+</h2>
+
+<p>
+A simple four-step approach designed to help
+students understand and remember concepts.
+</p>
+
+</div>
+
+
+<div class="method-grid">
+
+
+<div class="method-card reveal">
+
+<div class="method-number">
+01
+</div>
+
+<h3>
+Explain
+</h3>
+
+<p>
+Break complicated concepts into simple,
+understandable ideas.
+</p>
+
+</div>
+
+
+<div class="method-card reveal">
+
+<div class="method-number">
+02
+</div>
+
+<h3>
+Visualize
+</h3>
+
+<p>
+Use diagrams, equations and examples
+to make concepts easier.
+</p>
+
+</div>
+
+
+<div class="method-card reveal">
+
+<div class="method-number">
+03
+</div>
+
+<h3>
+Practice
+</h3>
+
+<p>
+Solve questions and problems to develop
+strong conceptual understanding.
+</p>
+
+</div>
+
+
+<div class="method-card reveal">
+
+<div class="method-number">
+04
+</div>
+
+<h3>
+Master
+</h3>
+
+<p>
+Review, test and apply the knowledge
+until the concept becomes clear.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LANGUAGES
+========================================================= -->
+
+<section>
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<div class="mini">
+Languages
+</div>
+
+<h2>
+Languages I Speak
+</h2>
+
+<p>
+I can communicate with students in multiple languages
+to make learning more comfortable.
+</p>
+
+</div>
+
+
+<div class="languages">
+
+
+<!-- EDIT LANGUAGE LEVELS -->
+
+<div class="language-card reveal">
+
+<div class="language-icon">
+🇵🇰
+</div>
+
+<h3>
+Urdu
+</h3>
+
+<p>
+Native
+</p>
+
+</div>
+
+
+<div class="language-card reveal">
+
+<div class="language-icon">
+A
+</div>
+
+<h3>
+English
+</h3>
+
+<p>
+Professional
+</p>
+
+</div>
+
+
+<div class="language-card reveal">
+
+<div class="language-icon">
+ع
+</div>
+
+<h3>
+Punjabi
+</h3>
+
+<p>
+Fluent
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SKILLS
+========================================================= -->
+
+<section class="skills" id="skills">
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<div class="mini">
+Professional Skills
+</div>
+
+<h2>
+My Teaching Skills
+</h2>
+
+<p>
+Skills that help me create a better learning
+experience for students.
+</p>
+
+</div>
+
+
+<div class="skills-container">
+
+
+<div class="skill reveal">
+
+<div class="skill-top">
+
+<span>
+Chemistry Teaching
+</span>
+
+<span>
+95%
+</span>
+
+</div>
+
+<div class="skill-bar">
+
+<div
+class="skill-progress"
+data-width="95">
+</div>
+
+</div>
+
+</div>
+
+
+<div class="skill reveal">
+
+<div class="skill-top">
+
+<span>
+Concept Explanation
+</span>
+
+<span>
+98%
+</span>
+
+</div>
+
+<div class="skill-bar">
+
+<div
+class="skill-progress"
+data-width="98">
+</div>
+
+</div>
+
+</div>
+
+
+<div class="skill reveal">
+
+<div class="skill-top">
+
+<span>
+Exam Preparation
+</span>
+
+<span>
+92%
+</span>
+
+</div>
+
+<div class="skill-bar">
+
+<div
+class="skill-progress"
+data-width="92">
+</div>
+
+</div>
+
+</div>
+
+
+<div class="skill reveal">
+
+<div class="skill-top">
+
+<span>
+Student Communication
+</span>
+
+<span>
+94%
+</span>
+
+</div>
+
+<div class="skill-bar">
+
+<div
+class="skill-progress"
+data-width="94">
+</div>
+
+</div>
+
+</div>
+
+
+<div class="skill reveal">
+
+<div class="skill-top">
+
+<span>
+Online Teaching
+</span>
+
+<span>
+90%
+</span>
+
+</div>
+
+<div class="skill-bar">
+
+<div
+class="skill-progress"
+data-width="90">
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ACHIEVEMENTS
+========================================================= -->
+
+<section>
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<div class="mini">
+Achievements
+</div>
+
+<h2>
+Professional Highlights
+</h2>
+
+<p>
+Some highlights from my teaching journey.
+</p>
+
+</div>
+
+
+<div class="achievement-grid">
+
+
+<div class="achievement reveal">
+
+<div class="achievement-icon">
+🏆
+</div>
+
+<h3>
+Academic Excellence
+</h3>
+
+<p>
+Helping students build strong academic foundations
+and improve their Chemistry performance.
+</p>
+
+</div>
+
+
+<div class="achievement reveal">
+
+<div class="achievement-icon">
+🔬
+</div>
+
+<h3>
+Practical Learning
+</h3>
+
+<p>
+Connecting theoretical Chemistry with laboratory
+work and real-world applications.
+</p>
+
+</div>
+
+
+<div class="achievement reveal">
+
+<div class="achievement-icon">
+📚
+</div>
+
+<h3>
+Student Mentoring
+</h3>
+
+<p>
+Supporting students with personalized guidance,
+study strategies and exam preparation.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TESTIMONIALS
+========================================================= -->
+
+<section class="testimonials" id="reviews">
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<div class="mini">
+Student Feedback
+</div>
+
+<h2>
+What Students Say
+</h2>
+
+<p>
+A few words from students about their learning experience.
+</p>
+
+</div>
+
+
+<div class="testimonial-grid">
+
+
+<div class="testimonial reveal">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+"Sir/Mam explains Chemistry in such a simple way
+that difficult topics become much easier to understand."
+</p>
+
+<div class="student">
+
+<div class="avatar">
+A
+</div>
+
+<div>
+
+<strong>
+Ali
+</strong>
+
+<small>
+Student
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="testimonial reveal">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+"The examples and problem-solving methods helped
+me understand concepts instead of just memorizing them."
+</p>
+
+<div class="student">
+
+<div class="avatar">
+S
+</div>
+
+<div>
+
+<strong>
+Sarah
+</strong>
+
+<small>
+Student
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="testimonial reveal">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+"I became much more confident in Chemistry after
+following the lessons and practice questions."
+</p>
+
+<div class="student">
+
+<div class="avatar">
+H
+</div>
+
+<div>
+
+<strong>
+Hamza
+</strong>
+
+<small>
+Student
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="faq">
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<div class="mini">
+FAQ
+</div>
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+</div>
+
+
+<div class="faq-container">
+
+
+<div class="faq-item reveal">
+
+<button class="faq-question">
+
+Do you teach online?
+
+<span class="plus">
++
+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Yes. I offer online Chemistry teaching and
+can teach students from different locations.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="faq-item reveal">
+
+<button class="faq-question">
+
+Which classes do you teach?
+
+<span class="plus">
++
+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+EDIT THIS ANSWER with your actual classes,
+for example Matric, Intermediate, O/A Level
+or university-level Chemistry.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="faq-item reveal">
+
+<button class="faq-question">
+
+Do you help with exam preparation?
+
+<span class="plus">
++
+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Yes. I can help students prepare for exams,
+practice questions and strengthen important concepts.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="faq-item reveal">
+
+<button class="faq-question">
+
+How can I contact you?
+
+<span class="plus">
++
+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+You can contact me through WhatsApp, email
+or the contact form below.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact" id="contact">
+
+<div class="container contact-grid">
+
+
+<div class="contact-info reveal">
+
+<h2>
+Let's Talk About
+Your Chemistry Goals.
+</h2>
+
+<p>
+If you are looking for Chemistry tuition,
+academic guidance or exam preparation,
+feel free to contact me.
+</p>
+
+
+<!-- EDIT HERE -->
+
+<div class="contact-detail">
+
+<strong>
+Email
+</strong>
+
+bilalzeeshan09@gmail.com
+
+</div>
+
+
+<div class="contact-detail">
+
+<strong>
+WhatsApp
+</strong>
+
++92 333 9805622
+
+</div>
+
+
+<div class="contact-detail">
+
+<strong>
+Location
+</strong>
+
+Sargodha, Pakistan
+
+</div>
+
+
+<div class="contact-detail">
+
+<strong>
+Availability
+</strong>
+
+Online & Physical Classes
+
+</div>
+
+</div>
+
+
+
+<form
+class="contact-form reveal"
+id="contactForm"
+>
+
+<input
+type="text"
+placeholder="Your Name"
+required
+>
+
+<input
+type="email"
+placeholder="Your Email"
+required
+>
+
+<input
+type="tel"
+placeholder="WhatsApp Number"
+>
+
+<select required>
+
+<option value="">
+Select Your Class
+</option>
+
+<option>
+Matric Chemistry
+</option>
+
+<option>
+Intermediate Chemistry
+</option>
+
+<option>
+O-Level Chemistry
+</option>
+
+<option>
+A-Level Chemistry
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+
+<textarea
+placeholder="Write your message..."
+required
+></textarea>
+
+
+<button
+type="submit"
+class="btn btn-primary"
+>
+
+Send Message
+
+</button>
+
+</form>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     WHATSAPP BUTTON
+     
+     EDIT NUMBER:
+     Replace 923000000000 with your WhatsApp number
+========================================================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/923000000000"
+target="_blank"
+title="Contact on WhatsApp"
+>
+
+☏
+
+</a>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+<div class="container">
+
+
+<div class="footer-grid">
+
+
+<div class="footer-brand">
+
+<a href="#home" class="logo">
+
+Dr <span>Muhammad Bilal Zeeshan</span>
+
+</a>
+
+<p>
+
+Chemistry teacher dedicated to making
+science easier, clearer and more interesting.
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h4>
+Quick Links
+</h4>
+
+<ul>
+
+<li>
+<a href="#home">Home</a>
+</li>
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#education">Education</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div>
+
+<h4>
+Expertise
+</h4>
+
+<ul>
+
+<li>
+<a href="#subjects">Organic Chemistry</a>
+</li>
+
+<li>
+<a href="#subjects">Chemical Bonding</a>
+</li>
+
+<li>
+<a href="#subjects">Thermochemistry</a>
+</li>
+
+<li>
+<a href="#subjects">Equilibrium</a>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div>
+
+<h4>
+Connect
+</h4>
+
+<ul>
+
+<li>
+<a href="https://www.facebook.com/bilal.zeeshan.54/">Facebook</a>
+</li>
+
+<li>
+<a href="https://www.instagram.com/bilalzeeshan09/">Instagram</a>
+</li>
+
+<li>
+<a href="https://www.linkedin.com/in/bilal-zeeshan-131987330/?isSelfProfile=true">LinkedIn</a>
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Dr Muhammad Bilal Zeeshan. All Rights Reserved.
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+
+<script>
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+const navbar =
+document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+
+if(window.scrollY > 50) {
+
+navbar.classList.add("scrolled");
+
+} else {
+
+navbar.classList.remove("scrolled");
+
+}
+
+});
+
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const navLinks =
+document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+
+navLinks.classList.toggle("active");
+
+});
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(link => {
+
+link.addEventListener("click", () => {
+
+navLinks.classList.remove("active");
+
+});
+
+});
+
+
+
+/* =========================================================
+   REVEAL ANIMATION
+========================================================= */
+
+const reveals =
+document.querySelectorAll(".reveal");
+
+const revealObserver =
+new IntersectionObserver(
+
+(entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting) {
+
+entry.target.classList.add("show");
+
+revealObserver.unobserve(
+entry.target
+);
+
+}
+
+});
+
+},
+
+{
+threshold: .12
+}
+
+);
+
+
+reveals.forEach(element => {
+
+revealObserver.observe(element);
+
+});
+
+
+
+/* =========================================================
+   COUNTERS
+========================================================= */
+
+const counters =
+document.querySelectorAll("[data-count]");
+
+
+const counterObserver =
+new IntersectionObserver(
+
+(entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting) {
+
+const counter =
+entry.target;
+
+const target =
+Number(counter.dataset.count);
+
+let current = 0;
+
+
+const update = () => {
+
+current +=
+Math.max(
+1,
+Math.ceil(target / 50)
+);
+
+
+if(current >= target) {
+
+current = target;
+
+}
+
+
+let suffix = "+";
+
+
+if(target === 95) {
+
+suffix = "%";
+
+}
+
+
+counter.textContent =
+current + suffix;
+
+
+if(current < target) {
+
+requestAnimationFrame(update);
+
+}
+
+};
+
+
+update();
+
+counterObserver.unobserve(
+counter
+);
+
+}
+
+});
+
+},
+
+{
+threshold: .8
+}
+
+);
+
+
+counters.forEach(counter => {
+
+counterObserver.observe(counter);
+
+});
+
+
+
+/* =========================================================
+   SKILL BARS
+========================================================= */
+
+const skillBars =
+document.querySelectorAll(
+".skill-progress"
+);
+
+
+const skillObserver =
+new IntersectionObserver(
+
+(entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting) {
+
+const bar =
+entry.target;
+
+const width =
+bar.dataset.width;
+
+bar.style.width =
+width + "%";
+
+skillObserver.unobserve(bar);
+
+}
+
+});
+
+},
+
+{
+threshold: .5
+}
+
+);
+
+
+skillBars.forEach(bar => {
+
+skillObserver.observe(bar);
+
+});
+
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+const faqItems =
+document.querySelectorAll(
+".faq-item"
+);
+
+
+faqItems.forEach(item => {
+
+const question =
+item.querySelector(
+".faq-question"
+);
+
+
+question.addEventListener(
+"click",
+() => {
+
+
+faqItems.forEach(other => {
+
+if(other !== item) {
+
+other.classList.remove(
+"active"
+);
+
+}
+
+});
+
+
+item.classList.toggle(
+"active"
+);
+
+});
+
+});
+
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+const form =
+document.getElementById(
+"contactForm"
+);
+
+
+form.addEventListener(
+"submit",
+function(e) {
+
+e.preventDefault();
+
+
+alert(
+"Thank you! Your message has been received."
+);
+
+
+form.reset();
+
+});
+
+</script>
+
+</body>
+</html>
